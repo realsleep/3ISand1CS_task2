@@ -20,7 +20,7 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
-   - ##### Step 2. Set up Jenkins server (URL: ``http://[jenskins-server-ip]:8080``). Hint: Don't forget to open port, you can use command ``ufw allow 8080``). Create new user. Create pipeline item. As a pipeline script you can use ``pipeline.groovy`` file.
+   - ##### Step 2. Set up Jenkins server (URL: ``http://[jenskins-server-ip]:8080``). Hint: Don't forget to open port, you can use command (``ufw allow 8080``). Create new user. Create pipeline item. As a pipeline script you can use ``pipeline.groovy`` file.
    - ##### Step 3. Install plugins such as "Go", "Docker plugin"  on Jenkins.
    - ##### Step 4. Give Jenkins acceses to Docker 
 ``` console
