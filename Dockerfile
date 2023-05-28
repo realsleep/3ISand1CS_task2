@@ -7,11 +7,6 @@ ADD . /greenfield
 ENV CGO_ENABLED=1
 ENV GO111MODULE=on
 
-# For Private REPO
-ARG GH_TOKEN=""
-RUN go env -w GOPRIVATE="github.com/bnb-chain/*"
-RUN git config --global url."https://${GH_TOKEN}@github.com".insteadOf "https://github.com"
-
 RUN cd /greenfield && make build
 
 # Pull greenfield into a second stage deploy alpine container
