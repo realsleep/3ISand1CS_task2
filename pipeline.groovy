@@ -3,7 +3,7 @@ pipeline {
     agent any 
     
     tools { 
-        go "Default"
+        go 'Default'
     }
     
     stages {
