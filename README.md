@@ -7,7 +7,7 @@
    - ##### Step 1. Install and run Jenkins server
     - ###### docker run -p 8080:8080 -name jenkins -v jenkins_home:/var/jenkins_home  jenkins/jenkins
    - ##### Step 2. Set up Jenkins server (hint: http://[jenskins-server-ip]:8080). Create pipeline item. As a pipeline script you can use pipeline.groovy file.
-   - ##### Step 3. Install plugins such as "Go", "Docker plugin"  on Jenkins 
+   - ##### Step 3. Install plugins such as "Go", "Docker plugin", "GitHub plugin"  on Jenkins 
    - ##### Step 4. Set up trigger. Every time push event triggers Jenkins pipeline.
         - ###### Dashboard > Manage Jenkins > System > Github > Advanced and click on 'Specify another hook URL for GitHub configuration'. Copy given URL address. Go to GitHub repository 'Setting' tab and under 'Webhooks' create new Webhook and paste previous URL address
     - ##### Step 5. Set up Prometheus and Grafana server.
